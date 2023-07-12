@@ -1,0 +1,17 @@
+<div class ="container col-md-4" style="margin-top:15%">
+    <h1 style="color:#007bff;">User Login</h1>
+    <form>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">User Id</label>
+            <input type="text" [(ngModel)]="user.userId" class="form-control" id="userId" name="userId">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Password</label>
+            <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="onLogin()">Login</button>
+    </form>
+
+</div>>

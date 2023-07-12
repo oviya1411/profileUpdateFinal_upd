@@ -1,0 +1,86 @@
+<div class="container col-md-12" style="margin-top:5%">
+    <button type="button" class="btn btn-primary" (click)="navigateToAddProfile()">Create your profile</button>
+
+    <br><br>
+    <div class="table-responsive">
+       <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">ProfileId</th>
+                <th scope="col">SOEID</th>
+                <th scope="col">FullName</th>
+                <th scope="col">CurrentProfile</th>
+                <th scope="col">SelfIntroduction</th>
+                <th scope="col">CurrentDepartment</th>
+                <th scope="col">MasteryOn</th>
+                <th scope="col">OtherSkills</th>
+                <th scope="col">UpSkills</th>
+                <th scope="col">OnTAcademyTrainingCertifications</th>
+                <th scope="col">InterestedToContributeIn</th>
+                <th scope="col">OtherAreasWillingToContribute</th>
+                <th scope="col">OpenToWork</th>
+                <th scope="col">Next1to3Years</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let profile of profiles">
+                <th scope="row"><button type="button" class="btn btn-primary">Let's connect</button></th>
+                <td>{{profile.profileID}}</td>
+                <td>{{profile.soeid}}</td>
+                <td>{{profile.fullName}}</td>
+                <td>{{profile.currentProfile}}</td>
+                <td>{{profile.selfIntro}}</td>
+                <td>{{profile.currentDept}}</td>
+                <td>{{profile.masteryOn}}</td>
+                <td>{{profile.otherSkills}}</td>
+                <td>{{profile.upSkillNeeds}}</td>
+                <td>{{profile.onTAcademyTrainingCertifications}}</td>
+                <td>{{profile.interestedToContributeIn}}</td>
+                <td>{{profile.otherAreasWillingToContribute}}</td>
+                <td>{{profile.openToWork}}</td>
+                <td>{{profile.next1to3Years}}</td>
+
+            </tr>
+            <tr >
+                <th scope="row"><button type="button" class="btn btn-primary">Let's connect</button></th>
+                <td>1</td>
+                <td>PS5678</td>
+                <td>Priya</td>
+                <td>Officer</td>
+                <td>I am a begginer Javabackend developer</td>
+                <td>PBWMT</td>
+                <td>Python</td>
+                <td>Mainframe</td>
+                <td>SpringBoot</td>
+                <td>OnT API certification</td>
+                <td>Java related projects</td>
+                <td>Mainframe, Java</td>
+                <td>Yes</td>
+                <td>AVP</td>
+
+            </tr>
+
+            <tr >
+                <th scope="row"><button type="button" class="btn btn-primary">Let's connect</button></th>
+                <td>2</td>
+                <td>JK78634</td>
+                <td>Jack</td>
+                <td>Officer</td>
+                <td>I am a UI/UX developer</td>
+                <td>PBWMT</td>
+                <td>Angular</td>
+                <td>React</td>
+                <td>SpringBoot</td>
+                <td>OnT UI/UX certification</td>
+                <td>Angular related projects</td>
+                <td>Java</td>
+                <td>Yes</td>
+                <td>AVP</td>
+
+            </tr>
+
+        </tbody>
+       </table>
+    </div>
+</div>
